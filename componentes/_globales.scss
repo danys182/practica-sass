@@ -1,0 +1,55 @@
+$fuente-primaria:'Lato', sans-serif;
+$fuente-secundaria:'Oswld', sans-serif;
+$color-primario:#333333;
+$color-claro:#ffffff;
+$color-secundario:#8841DA; 
+$color-variacion: #3f579a;
+
+
+@mixin caja {
+    width: 50%;
+    padding: 15px;
+    margin: 15px auto 15px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.3);
+    color: $color-primario;
+    background-color: $color-claro;
+}
+
+@mixin titulos($fuente) { 
+    @if $fuente == $fuente-secundaria {
+        text-transform: uppercase;
+    }
+    font-family: $fuente;
+}
+
+
+@function getOpacity($color, $nivel) {
+    @return rgba($color, $nivel);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fuente-primaria;
+}
+
+h2, h3 {
+    margin: 5px 0;
+}
+
+main {
+    display:flex;
+    width: 100%;
+}
+section {
+    padding-bottom: 50px;
+    width:40%;
+}
+.articulos {
+    width: 60%;
+}

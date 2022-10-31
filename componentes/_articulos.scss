@@ -1,0 +1,35 @@
+.articulos {
+    padding: 50px;
+    color: $color-claro;
+    background-color: $color-primario;
+    h2 {
+        color: $color-claro;
+    }
+}
+
+.articulo {
+    margin-bottom: 60px;
+    border-bottom: 3px solid $color-secundario;
+    
+
+    &__categoria {
+        font-size: 16px;
+        font-weight: 500;
+        @include titulos($fuente-secundaria);
+    }
+
+    &__titulo {
+        font-size: 20px;
+        font-weight: 700;
+        color: $color-primario;
+        @include titulos($fuente-secundaria);
+    }
+
+    &__descripcion {
+        margin-bottom: 30px;
+    }
+
+    &__categoria {
+        color: $color-secundario;
+    }
+}

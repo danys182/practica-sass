@@ -1,0 +1,19 @@
+.ubicacion--perfil {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    @include caja;
+
+    span {
+        font-size: 40px;
+        color: $color-variacion;
+    }
+
+    h2 {
+        @extend .perfil__nombre;
+    }
+    h3 {
+        @extend .perfil__titulo;
+    }
+
+}

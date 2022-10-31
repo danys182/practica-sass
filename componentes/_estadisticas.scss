@@ -1,0 +1,12 @@
+.estadistica--perfil {
+    display: flex;
+    justify-content: space-around;
+    @include caja;
+
+    h3 {
+        @extend .perfil__nombre;
+    }
+    span {
+        @extend .perfil__titulo;
+    }
+}
